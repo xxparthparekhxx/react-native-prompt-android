@@ -5,4 +5,5 @@
           android:textCursorDrawable="@drawable/edit_text_cursor"
           style="@style/ShimoEditTextStyle"
           android:imeOptions="actionDone"
-          android:theme="@style/ShimoEditTextStyle"/>
+          android:theme="@style/ShimoEditTextStyle"
+          />

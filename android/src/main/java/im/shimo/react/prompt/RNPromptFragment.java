@@ -9,6 +9,7 @@ import android.text.InputType;
 import android.view.LayoutInflater;
 import android.view.WindowManager;
 import android.widget.EditText;
+import android.view.inputmethod.EditorInfo
 
 import androidx.appcompat.app.AlertDialog;
 
@@ -104,9 +105,12 @@ public class RNPromptFragment extends DialogFragment implements DialogInterface.
         switch (style) {
             case "shimo":
                 input = (EditText) inflater.inflate(R.layout.edit_text, null);
+                input.setImeOptions(EditorInfo.IME_FLAG_NO_EXTRACT_UI);
                 break;
             default:
                 input = new EditText(activityContext);
+                input.setImeOptions(EditorInfo.IME_FLAG_NO_EXTRACT_UI);
+
         }
 
         // input type
